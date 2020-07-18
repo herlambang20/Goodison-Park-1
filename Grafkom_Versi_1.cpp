@@ -191,12 +191,65 @@ int j = -40;
     glVertex3f(i+10, 0.01, -75);
     glVertex3f(i+10, 0.01, 0.0);
     glVertex3f(i, 0.01, 0.0);
+    glEnd();   
+    i+=10;
+	}	
+	
+		//garis penalty bawah
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(40, 0.12, -17);
+    glVertex3f(25, 0.12, -17);
+    glVertex3f(25, 0.12, -16);
+    glVertex3f(40, 0.12, -16);
     glEnd();
     
-    i+=10;
-  
-	}
-	
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(40, 0.12, -22);
+    glVertex3f(32, 0.12, -22);
+    glVertex3f(32, 0.12, -23);
+    glVertex3f(40, 0.12, -23);
+    glEnd();
+    
+    //garis penalty atas   
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(40, 0.12, -58);
+    glVertex3f(25, 0.12, -58);
+    glVertex3f(25, 0.12, -57);
+    glVertex3f(40, 0.12, -57);
+    glEnd();
+    
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(40, 0.12, -53);
+    glVertex3f(32, 0.12, -53);
+    glVertex3f(32, 0.12, -52);
+    glVertex3f(40, 0.12, -52);
+    glEnd();
+    
+    //garis penalty kanan
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(25, 0.12, -58);
+    glVertex3f(24, 0.12, -58);
+    glVertex3f(24, 0.12, -16);
+    glVertex3f(25, 0.12, -16);
+    glEnd();
+    
+     glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(32, 0.12, -53);
+    glVertex3f(33, 0.12, -53);
+    glVertex3f(33, 0.12, -22);
+    glVertex3f(32, 0.12, -22);
+    glEnd();
+    
+    
+    
+    //kanan
+
 	//garis penalty bawah
 	glBegin(GL_QUADS);
 	glColor3f(1.0, 1.0, 1.0);
@@ -206,7 +259,15 @@ int j = -40;
     glVertex3f(-40, 0.12, -16);
     glEnd();
     
-    //garis penalty bawah
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-40, 0.12, -22);
+    glVertex3f(-32, 0.12, -22);
+    glVertex3f(-32, 0.12, -23);
+    glVertex3f(-40, 0.12, -23);
+    glEnd();
+    
+    //garis penalty atas
 	glBegin(GL_QUADS);
 	glColor3f(1.0, 1.0, 1.0);
     glVertex3f(-40, 0.12, -58);
@@ -215,16 +276,31 @@ int j = -40;
     glVertex3f(-40, 0.12, -57);
     glEnd();
     
+     glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-40, 0.12, -53);
+    glVertex3f(-32, 0.12, -53);
+    glVertex3f(-32, 0.12, -52);
+    glVertex3f(-40, 0.12, -52);
+    glEnd();
+    
     //garis penalty kanan
     glBegin(GL_QUADS);
 	glColor3f(1.0, 1.0, 1.0);
-    glVertex3f(39, 0.12, -73);
-    glVertex3f(40, 0.12, -73);
-    glVertex3f(40, 0.12, -2.0);
-    glVertex3f(39, 0.12, -2.0);
+    glVertex3f(-25, 0.12, -58);
+    glVertex3f(-24, 0.12, -58);
+    glVertex3f(-24, 0.12, -16);
+    glVertex3f(-25, 0.12, -16);
     glEnd();
     
-
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-32, 0.12, -53);
+    glVertex3f(-33, 0.12, -53);
+    glVertex3f(-33, 0.12, -22);
+    glVertex3f(-32, 0.12, -22);
+    glEnd();
+    
 	//garis lapangan atas
 	glBegin(GL_QUADS);
 	glColor3f(1.0, 1.0, 1.0);
